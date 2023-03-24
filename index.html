@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WooJaeHyuk</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="screen-block"></div>
+
+    <div class="flex wrap">
+      <!-- Home -->
+
+      <section class="flex" id="home">
+        <div class="flex greeting">
+          <h1>JaeHyuk's Portfolio</h1>
+          <div class="button page-link" dest="about">
+            VIEW MY PROFILE <i class="mdi mdi-arrow-right"></i>
+          </div>
+        </div>
+        <canvas class="background"></canvas>
+        <nav class="flex">
+          <div class="flex row menu wrapper">
+            <div class="menu-item page-link active" dest="home">HOME</div>
+            <div class="menu-item page-link" dest="about">ABOUT</div>
+            <div class="menu-item page-link" dest="strength">STRENGTH</div>
+            <div class="menu-item page-link" dest="projects">PROJECTS</div>
+            <div class="menu-item page-link" dest="contact">CONTACT</div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- About -->
+      <section class="flex" id="about">
+        <h2 class="header">ABOUT</h2>
+        <div class="flex row container wrapper">
+          <div class="flex introduce">
+            <img src="images/me.jpg" alt="얼굴 사진" class="backup-image" />
+          </div>
+          <div class="flex skills">
+            <!-- who am i -->
+            <span class="about-sub-title">who am i</span>
+            <div class="flex who-item">
+              <div class="flex who-text">name</div>
+              <div class="flex who-item-value">우제혁</div>
+            </div>
+            <div class="flex who-item">
+              <div class="flex who-text">phone_number</div>
+              <div class="flex who-item-value">010-4149-6804</div>
+            </div>
+            <div class="flex who-item">
+              <div class="flex who-text">school</div>
+              <div class="flex who-item-value">중부대학교 정보보안학과</div>
+            </div>
+            <div class="flex who-item">
+              <div class="flex who-text">age</div>
+              <div class="flex who-item-value">24살 (00년생)</div>
+            </div>
+            <div class="flex who-item">
+              <div class="flex who-text">e-mail</div>
+              <div class="flex who-item-value">wpgur0510@gamil.com</div>
+            </div>
+            <!-- Certification -->
+            <span class="about-sub-title">Certification</span>
+            <div class="flex who-item">
+              <div class="flex who-text">Certification</div>
+              <div class="flex who-item-value">
+                네트워크 관리사 2 급(한국정보 통신 자격협회)
+              </div>
+            </div>
+            <!-- Security skills -->
+            <span class="about-sub-title">Security skills</span>
+            <div class="flex skills-item">
+              <div class="flex skills-text">Web</div>
+              <div class="flex who-item-value">
+                XSS, SQLI, CSRF, SSRF, XXE, File Upload
+              </div>
+            </div>
+            <div class="flex skills-item">
+              <div class="flex skills-text">DB</div>
+              <div class="flex who-item-value">MySQL</div>
+            </div>
+            <div class="flex skills-item">
+              <div class="flex skills-text">Etc</div>
+              <div class="flex who-item-value">AWS, GCP</div>
+            </div>
+            <!-- Development skills -->
+            <span class="about-sub-title">Development skills</span>
+            <div class="flex skills-item">
+              <div class="flex skills-text">Python</div>
+              <div class="bar-wrap">
+                <div class="bar" style="max-width: 80%"></div>
+              </div>
+            </div>
+            <div class="skills-item">
+              <div class="flex skills-text">C</div>
+              <div class="bar-wrap">
+                <div class="bar" style="max-width: 60%"></div>
+              </div>
+            </div>
+            <div class="flex skills-item">
+              <div class="flex skills-text">Etc skills</div>
+              <div class="flex who-item-value">
+                Flutter,HTML,CSS,JS,PHP,C++,Java
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Strength -->
+      <section class="flex" id="strength">
+        <h2 class="header">Strength</h2>
+        <div class="flex row container wrapper">
+          <div class="flex row strength-wrap">
+            <div class="flex strength-item">
+              <i class="mdi mdi-hexagon hexagon" style="font-size: 200px">
+                <i
+                  class="mdi mdi-lightbulb-on icon"
+                  style="font-size: 100px"
+                ></i>
+              </i>
+              <div class="title">Curiosity</div>
+              <div class="text">
+                호기심이 많으며 궁금한점이 있으면 해결하고자 합니다.
+              </div>
+            </div>
+            <div class="flex strength-item">
+              <i class="mdi mdi-hexagon hexagon" style="font-size: 200px">
+                <i class="mdi mdi-equalizer icon" style="font-size: 100px"></i>
+              </i>
+              <div class="title">Quality</div>
+              <div class="text">
+                프로젝트가 크든 작든 항상 높은 완성도를 추구합니다.
+              </div>
+            </div>
+          </div>
+          <div class="flex row strength-wrap">
+            <div class="flex strength-item">
+              <i class="mdi mdi-hexagon hexagon" style="font-size: 200px">
+                <i
+                  class="mdi mdi-book-open-variant icon"
+                  style="font-size: 100px"
+                ></i>
+              </i>
+              <div class="title">Fast Learner</div>
+              <div class="text">
+                무엇이든지 빨리 배우며 궁금한 부분은 스스로 학습합니다.
+              </div>
+            </div>
+            <div class="flex strength-item">
+              <i class="mdi mdi-hexagon hexagon" style="font-size: 200px">
+                <i
+                  class="mdi mdi-head-snowflake-outline icon"
+                  style="font-size: 100px"
+                ></i>
+              </i>
+              <div class="title">Applicable</div>
+              <div class="text">배운 내용을 적재적소에 응용할 수 있습니다.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="flex" id="projects">
+        <h2 class="header">PROJECTS</h2>
+        <div class="flex container">
+          <div class="flex row projects-type-wrap">
+            <div class="flex projects-type all active">All</div>
+            <div class="flex projects-type finished">finished</div>
+            <div class="flex projects-type Unfinished">Unfinished</div>
+          </div>
+          <div class="flex row projects-list wrapper">
+            <div class="projects-item all finished">
+              <img
+                src="images/gnuboard.jpg"
+                alt="MaskDetection"
+                class="backup-image"
+              />
+              <div class="flex projects-info">
+                <h3>
+                  그누보드 취약점 분석 및 보안<br />
+                  (2020.01)
+                </h3>
+                <p class="summary">XSS 취약점 제보</p>
+                <p class="details">
+                  사람들이 많이 사용하는 쇼핑몰 개발 플랫폼인 그누보드의
+                  취약점을 찾고 취약점 대응 방안도 함께 알아본
+                  프로젝트입니다.<br /><br />
+                  XSS 취약점을 제보 했으며.<br /><br />
+                  프로젝트 진행 방법 및 XSS,SQL,FILE UPLOAD 취약점 등을
+                  배웠습니다.
+                </p>
+              </div>
+            </div>
+            <div class="projects-item all finished">
+              <img
+                src="images/3Dprinter.png"
+                alt="MaskDetection"
+                class="backup-image"
+              />
+              <div class="flex projects-info">
+                <h3>3D_프린터 취약점 점검 및 대응방안 (2020.07~2021.03)</h3>
+                <p class="summary">
+                  취약점 제보,논문 투고,취약점 점검 도구 개발
+                </p>
+                <p class="details">
+                  과학기술정보통신부 주관 차세대 보안리더 양성 프로그램(BOB)에서
+                  진행된 3D 프린터 취약점 점검 프로젝트 프로젝트입니다.<br /><br />
+                  임베디드, 네트워크, 정책, 컨설팅, 논문 등 다양한 분야를
+                  접해봤으며 프로젝트의 이해와 실력이 많이 늘었던 프로젝트.
+                  <br /><br />
+                </p>
+                <div class="flex btn-open-popup">MORE</div>
+              </div>
+            </div>
+            <div class="projects-item all finished">
+              <img
+                src="images/WhiteBalance.jpg"
+                alt="WhiteBalance"
+                class="backup-image"
+              />
+              <div class="flex projects-info">
+                <h3>planb 웹 서비스 제공(현재 서비스 중단) (2021.04)</h3>
+                <p class="summary">백엔드(GCP)</p>
+                <p class="details">
+                  코로나로 인해 미뤄진 행사및 시험일정을 알려주는 planb 웹
+                  서비스 입니다.<br /><br />
+                  Googole Cloud Platform을 통해 서버 운영을 담당 했으며 데이터
+                  가공과 이후 웹 서비스 버그 바운티도 운영했습니다.<br /><br />
+                  웹 서버 보안 및 서버 구축에 대해 배움.
+                </p>
+              </div>
+            </div>
+            <div class="projects-item all Unfinished">
+              <img src="images/Game.png" alt="Game" class="backup-image" />
+              <div class="flex projects-info">
+                <h3>W2A(Weakness Web Application) 프로젝트 -미완- (2020.11)</h3>
+                <p class="summary">Docker flask</p>
+                <p class="details">
+                  다양한 분야의 CTF를 직접 풀며 기초를 다지고 직접 개발한 CTF
+                  페이지에 지속적으로 직접 제작한 문제를 업로드 하여 CTF의
+                  진입장벽을 낮춰 사람들이 좀더 쉽게 접근할 수 있게 하기 위한 웹
+                  서비스 제공 프로그램.<br /><br />
+                  Docker 와 flask를 사용해서 제작 했다.<br /><br />
+                  군대로 인한 무기한 연장.<br /><br />
+                </p>
+              </div>
+              <div class="modal hidden">
+                <div class="modal__background"></div>
+                <div class="modal__content">
+                  <h1>3D_프린터 취약점 점검 및 대응방안</h1>
+                  <br /><br />
+                  -신도리코 社와 직접 협업하여 취약점 분석 및 컨설팅 진행<br /><br />
+                  -RCE 취약점 포함 8 건의 크리티컬 한 취약점 제보<br /><br />
+                  -신도리코 社로 부터 감사장 수여<br /><br />
+                  -3D 프린터 자동화 분석도구 및 점검 진단 가이드 제작<br /><br />
+                  -한국 산업 보안 연구 학회 “산업 기술의 유출 방지와 보호를 위한
+                  네트워크 3d 프린터 보안체크리스트 연구” 논문 투고<br /><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="flex" id="contact">
+        <h2 class="header">CONTACT</h2>
+        <div class="flex row container wrapper">
+          <div class="flex row strength-wrap">
+            <div class="flex strength-item">
+              <a href="https://www.instagram.com/wpgur010/"
+                ><img
+                  src="images/instagram.png"
+                  alt="insta"
+                  class="contact-image"
+                />
+              </a>
+              <div class="title">Instagram</div>
+            </div>
+            <div class="flex strength-item">
+              <a href="https://www.facebook.com/wpgur"
+                ><img
+                  src="images/facebook.png"
+                  alt="insta"
+                  class="contact-image"
+                />
+              </a>
+              <div class="title">facebook</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/model.js"></script>
+
+    <div id="preload">
+      <img src="images/background5.jpg" onload="disableScreenBlock();" />
+    </div>
+  </body>
+</html>
